@@ -4,12 +4,12 @@
 # logstash-oss 7.8.1
 # filebeat-oss 7.8.1
 
-# Step1: Clone ELK 
+Step1: Clone ELK 
 
-#git clone https://github.com/hiep-hoang/elk-docker-compose.git
+git clone https://github.com/hiep-hoang/elk-docker-compose.git
 
-# Step2: RUN docker compose to deploy elk 
+Step2: RUN docker compose to deploy elk 
 
-#docker-compose -f elk-compose.yml up
+docker-compose -f elk-compose.yml up
 
-# Step3: Config by your style ^^
+Step3: Config by your style ^^
