@@ -1,0 +1,22 @@
+filebeat.inputs:
+- input_type: container
+  paths: 
+    - '/var/lib/docker/containers/a95cb146b1b087fdf4724664e20ae40fff346ac9ca666d50dfcf169f10f37044/*.log'
+  tags: ["nginx"]
+
+- input_type: container
+  paths:
+    - '/var/lib/docker/containers/e78769603ddca07ddcf9aa27e851d8783fef5adf1781ccc12d6f3d56e29dd516/*.log'
+  tags: ["kibana"]
+
+
+#filebeat.autodiscover:
+#  providers:
+#    - type: docker
+#      hints.enabled: true
+#
+#processors:
+#- add_docker_metadata: ~
+
+output.logstash:
+  hosts: "127.0.0.1:5044"
