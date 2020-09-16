@@ -8,6 +8,8 @@ Step1: Clone ELK
 
 git clone https://github.com/hiep-hoang/elk-docker-compose.git
 
+Step2: Move all in "elk-docker-compose" directory to "root" directory 
+
 Step2: RUN docker compose to deploy elk 
 
 docker-compose -f elk-compose.yml up
